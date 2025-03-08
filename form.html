@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt" xml:lang="pt">
+  <head>
+    <title>Formulário</title>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="fullname">Nome Completo:</label>
+        <input id="fullname" type="text" required placeholder="Escreva seu Nome"/>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input id="email" type="email" required placeholder="Escreva seu Email" />
+      </div>
+      <div>
+        <label for="birthdate">Data de Nascimento:</label>
+        <input id="birthdate" type="date" required />
+
+      </div>
+      <div>
+        <label for="password">Senha:</label>
+        <input id="password" type="password" minlength="8" required placeholder="Digite sua Senha" />
+      </div>
+
+      <div>
+        <label for="gender">Gênero</label>
+        <div>
+          <input id="male" name="gender" type="radio" />
+          <label for="male">Masculino</label>
+        </div>
+        <div>
+          <input id="female" name="gender" type="radio" />
+          <label for="female">Feminino</label>
+        </div>
+        <div>
+          <input id="Other" name="gender" type="radio" />
+          <label for="Other">Other</label>
+        </div>
+        <div>
+          <label for="pet">Pet</label>
+
+          <div>
+            <input id="dog" name="pet" type="checkbox" />
+            <label for="dog">Cachorro</label>
+          </div>
+
+          <div>
+            <input id="cat" name="pet" type="checkbox" />
+            <label for="cat">Gato</label>
+          </div>
+        </div>
+
+        <div>
+            <label for="car">Carro</label>
+        </div>
+        <div>
+            <select id="car">
+              <option value="Mercedes">Mercedes</option>
+              <option value="Ferrari">Ferrari</option>
+              <option value="Honda">Honda</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="about">Sobre Mim</label>
+
+            <textarea id="about"  placeholder="Descreva seu perfil"></textarea>
+        </div>
+
+        <div>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </div>
+    </form>
+  </body>
+</html>
