@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Formulário de cadastro avançado com campos de texto, email, senha, data de nascimento, gênero e interesses."
+    />
+    <meta
+      name="keywords"
+      content="HTML, formulários, cadastro, desenvolvimento web"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Formulário Avançado - Meu Site</title>
+    <style>
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+      }
+      nav ul li {
+        display: inline;
+        margin-right: 10px;
+      }
+      nav ul li a {
+        text-decoration: none;
+        color: #000;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Formulário de Cadastro</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="forms.html">Formulários</a></li>
+          <li><a href="tables.html">Tabelas</a></li>
+          <li><a href="semantic-tags.html">Tags Semânticas</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <form action="#" method="post" id="cadastro-form">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required />
+
+        <label for="data-nascimento">Data de Nascimento:</label>
+        <input
+          type="date"
+          id="data-nascimento"
+          name="data-nascimento"
+          required
+        />
+
+        <fieldset>
+          <legend>Gênero:</legend>
+          <label for="masculino">
+            <input
+              type="radio"
+              id="masculino"
+              name="genero"
+              value="masculino"
+              required
+            />
+            Masculino
+          </label>
+          <label for="feminino">
+            <input type="radio" id="feminino" name="genero" value="feminino" />
+            Feminino
+          </label>
+          <label for="outro">
+            <input type="radio" id="outro" name="genero" value="outro" /> Outro
+          </label>
+        </fieldset>
+
+        <label for="interesses">Interesses:</label>
+        <select id="interesses" name="interesses" multiple>
+          <option value="tecnologia">Tecnologia</option>
+          <option value="esportes">Esportes</option>
+          <option value="musica">Música</option>
+          <option value="arte">Arte</option>
+        </select>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2023 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+  </body>
+</html>
